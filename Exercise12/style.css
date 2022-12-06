@@ -1,0 +1,377 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #001;
+}
+p{
+	font-family: monospace;
+}
+.btn{
+	font-family: monospace;
+}
+button{
+	font-family: monospace;
+}
+h1{
+	font-family: monospace;
+}
+.firstcont{
+	width: 100%;
+	height: 100v;
+}
+.main-cont{
+	width: 100%;
+	height: 100vh;
+}
+.navigation{
+	width: 100%;
+	height: 70px;
+	background:pink;
+	top: 0;
+	position: fixed;
+	z-index: 4;
+	display: flex;
+	justify-content: space-between;
+	padding-right: 50px;
+	padding-left: 20px;
+}
+.menu{
+	color: #fff;
+	width: 70px;
+	height: 70px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	margin-left: 5px;
+}
+.menu i{
+	font-size: 25px;
+	transition: .4s;
+}
+.menu i:hover{
+	transform: scale(1.1);
+}
+.logo img{
+	height: 70px;
+}
+
+.navlinks{
+	width: 80px;
+	height: 100%;
+	background: #000;
+	left: -80px;
+	position: fixed;
+	align-items: center;
+	justify-content:space-between;
+	display: flex;
+	flex-direction: column;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	opacity: 0;
+	transition: 0.3s;
+	z-index: 3;
+	border-right: 1px solid #fff;
+}
+.navlinks-open{
+	left: 0;
+	opacity: 1;
+}
+.navlinks i{
+	color: #fff;
+	padding: 15px;
+	font-size: 20px;
+
+}
+.f-icon a, .s-icon a{
+	text-decoration: none;
+}
+.f-icon{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-top: 30px;
+	width: 80px;
+}
+.s-icon{
+	width: 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.f-icon i{
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.4s;
+	margin: 3px;
+}
+
+.f-icon i:hover{
+	background: #f7f7f7;
+	color: #000;
+	
+}
+.s-icon i{
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.4s;
+	margin: 3px;
+}
+
+.s-icon i:hover{
+	background: #f7f7f7;
+	color: #000;
+	
+}
+.carousel{
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 100%;
+	height: 100vh;
+	margin-top: 30px;
+	background: #001;
+	background: linear-gradient(rgb(0, 0, 0, 0.9),rgb(0, 0, 0, 0.9)),url(https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+
+}
+
+.carousel-inner{
+	width: 550px;
+	border: 1px solid #fff;
+	margin: 10px;
+
+}
+
+.carousel-inner{
+	border-radius: 10px;
+}
+.carousel-item{
+	transition: 0.6s;
+	
+}
+.caption{
+	width: 500px;
+	color: #fff;
+}
+.caption h1{
+	font-size: 55px;
+	padding-left: 30px;
+/*	text-align: center;*/
+	font-family: monospace;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+.caption h1::after{
+	content: "❮!-Read Me-❯";
+  	display:flex;
+  	transform:rotateX(180deg);
+  	background-image:
+    linear-gradient(180deg,rgba(255,255,255,.0) 10%,rgba(255,255,255,.2));
+  	-webkit-background-clip: text;
+  	color: transparent;
+  	margin-top: -25px;
+}
+.caption p{
+	font-size: 18px;
+	padding: 30px;
+}
+.card{
+	/* From https://css.glass */
+/*background: rgba(255, 255, 255, 0.14);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.9px);
+-webkit-backdrop-filter: blur(2.9px);
+border: 1px solid rgba(255, 255, 255, 1);*/
+}
+/*card*/
+.card-title{
+	font-size: 25px;
+}
+.card-description{
+	font-size: 14px;
+}
+.card button{
+	background: #000;
+	color: #fff;
+	width: 100%;
+	height: 50px;
+}
+.card button:hover{
+	
+	background: #fff;
+	border: 2px solid #000;
+	color: #000;
+	
+}
+.card-container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+	background: #001;
+	padding: 40px;
+}
+.card{
+	width: 265px;
+	transition: 0.3s;
+	margin: 18px;
+}
+.card:hover{
+	box-shadow: 2px 2px 10px -3px #fff;
+	transform: translateY(-10px);
+}
+footer{
+	width: 100%;
+	height: 80px;
+	background: #000;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	padding: 50px;
+}
+footer p{
+	padding: 10px;
+	text-align: center;
+	color: #fff;
+}
+.footer-icon{
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	margin-top: 10px;
+}
+.footer-icon i{
+	margin: 30px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	transition: 0.4s;
+	font-size: 20px;
+	opacity: 0.5;
+}
+.footer-icon i:hover{
+	transform: scale(1.1);
+	opacity: 1;
+}
+.accordion{
+	width: 100%;
+	height: auto;
+	margin-bottom: 30px;
+}
+.youtube-card{
+	width: 700px;
+	height: 100%;
+	margin: auto;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+/*	flex-direction: column;*/
+}
+.accordion-item{
+	margin: 5px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.accordion-body button{
+	background: #000;
+	color: #fff;
+	border-radius: 10px;
+	width: 180px;
+	height: 50px;
+}
+.accordion-body button:hover{
+	
+	background: #fff;
+	border: 1px solid #000;
+	color: #000;
+}
+
+@media only screen and (max-width:735px){
+	.caption{
+/*	margin-top: 40px;*/
+	max-width:500px;
+	width: 100%;
+}
+.caption h1{
+	font-size: 30px;
+}
+
+}
+@media only screen and (max-width:600px){
+.carousel{
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	width: 100%;
+	height: 100vh;
+	margin-top: 30px;
+	background: #001;
+}
+
+.carousel-inner{
+	max-width: 550px;
+	width: 100%;
+/*	margin-top: -10rem;*/
+
+}
+.caption{
+	margin-top: 40px;
+	max-width:500px;
+	width: 100%;
+}
+.caption h1{
+	font-size: 40px;
+}
+.card-container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+	background: #001;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.accordion{
+	max-width: 700px;
+	width: 100%;
+	height: auto;
+}
+iframe{
+	max-height: 360px;
+	height: 100%;
+}
+.youtube-card{
+	max-width: 700px;
+	width: 100%;
+}
+}
